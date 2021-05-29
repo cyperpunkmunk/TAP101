@@ -1,14 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import About from './components/About';
+import Nav from './components/Nav';
+import Signup from './components/Signup';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div classNAme = "Nav">
+        <Nav> </Nav>
+
+      </div>
+      <div className = "App-body">
+        <div className = "how">
+
+        </div>
+
+        <div className = "user">
+          <Signup></Signup>
+        </div>
+      </div>
+      <div className="App-header">
+        
+        < About ></About> 
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -16,7 +30,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
-      </header>
+      </div>
     </div>
   );
 }
