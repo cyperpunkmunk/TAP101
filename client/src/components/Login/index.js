@@ -1,0 +1,43 @@
+import React , { useRef } from 'react'
+import { Form , Button , Card } from 'react-bootstrap'
+import Base from '../../firebase';
+import './style.css';
+
+
+function Login() {
+    
+    const emailRef = useRef()
+    const passwordRef = useRef()
+    const passwordConfirmRef = useRef()
+
+    return (
+        <>
+            <Card>
+                <Card.body>
+                    <h2 className="text-">Sign up</h2>
+                    <Form>
+                        <Form.Group  id ="email">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="email" ref={emailRef} required />
+                        </Form.Group>
+                        <Form.Group  id ="password">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="password" ref={passwordRef} required />
+                        </Form.Group>
+                        <Form.Group  id ="password-confirm">
+                            <Form.Label>Password Conformation </Form.Label>
+                            <Form.Control type="password" ref={passwordConfirmRef} required />
+                        </Form.Group>
+                        <Button class = "w-100">Sign up</Button>
+                    </Form>
+                </Card.body>
+            </Card>
+            <div class = "w-100 text-center mt-2">
+                Already have an account? Login
+            </div>
+        </>
+    )
+   
+}
+
+export default Login

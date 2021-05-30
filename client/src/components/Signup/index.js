@@ -3,8 +3,8 @@ import './style.css';
 function Signup() {
     
     return (
-        <div className="sign-up">
-            <p>hi</p>
+        <div className="signUp">
+            <p>sign Up</p>
         </div>
     );
 

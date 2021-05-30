@@ -1,8 +1,12 @@
 
 import './App.css';
+
 import About from './components/About';
+import HowTo from './components/How-to';
+import Login from './components/Login';
 import Nav from './components/Nav';
-import Signup from './components/Signup';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 function App() {
   return (
@@ -13,16 +17,17 @@ function App() {
       </div>
       <div className = "App-body">
         <div className = "how">
-
+          <HowTo></HowTo>
         </div>
 
-        <div className = "user">
-          <Signup></Signup>
+        <div >
+          <Login></Login>
+         
         </div>
       </div>
       <div className="App-header">
         
-        < About ></About> 
+        <About></About> 
         <a
           className="App-link"
           href="https://reactjs.org"

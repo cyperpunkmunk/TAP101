@@ -24,3 +24,11 @@
   color: white;
 }
 
+.App-body{
+  display: flex;
+  justify-content: space-around;
+}
+
+.how{
+  max-width: 40%;
+}
