@@ -13,7 +13,7 @@ function Login() {
     return (
         <>
             <Card>
-                <Card.body>
+                <Card.Body>
                     <h2 className="text-">Sign up</h2>
                     <Form>
                         <Form.Group  id ="email">
@@ -21,18 +21,18 @@ function Login() {
                             <Form.Control type="email" ref={emailRef} required />
                         </Form.Group>
                         <Form.Group  id ="password">
-                            <Form.Label>Email</Form.Label>
+                            <Form.Label>Password</Form.Label>
                             <Form.Control type="password" ref={passwordRef} required />
                         </Form.Group>
                         <Form.Group  id ="password-confirm">
                             <Form.Label>Password Conformation </Form.Label>
                             <Form.Control type="password" ref={passwordConfirmRef} required />
                         </Form.Group>
-                        <Button class = "w-100">Sign up</Button>
+                        <Button className = "w-100">Sign up</Button>
                     </Form>
-                </Card.body>
+                </Card.Body>
             </Card>
-            <div class = "w-100 text-center mt-2">
+            <div className = "w-100 text-center mt-2">
                 Already have an account? Login
             </div>
         </>

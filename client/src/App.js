@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <div className="App">
-      <div classNAme = "Nav">
+      <div className = "Nav">
         <Nav> </Nav>
 
       </div>
