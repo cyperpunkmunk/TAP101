@@ -3,13 +3,16 @@ import './App.css';
 
 import About from './components/About';
 import HowTo from './components/How-to';
-import Login from './components/Login';
+// import Login from './components/Login';
+import Signup from './components/Signup';
 import Nav from './components/Nav';
-import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { AuthProvider } from './contexts/AuthContext';
 
 
 function App() {
   return (
+    <AuthProvider>
     <div className="App">
       <div className = "Nav">
         <Nav> </Nav>
@@ -21,7 +24,7 @@ function App() {
         </div>
 
         <div >
-          <Login></Login>
+          <Signup></Signup>
          
         </div>
       </div>
@@ -37,6 +40,7 @@ function App() {
         </a>
       </div>
     </div>
+    </AuthProvider>
   );
 }
 
